@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#projects">PROJECT</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<div class="home">
+   <div class="sidebar">
+       <a  href="#"><i class="fas fa-envelope"></i></a>
+       <a  href="#"><i class="fab fa-github"></i></a>
+       <a  href="#"><i class="fab fa-linkedin-in"></i></a>
+   </div>
+   <div class="gif">
+
+       <img src="lightbulb.png" alt="">
+   </div>
+    <div class="content">
+        <h2> Hi, I am <br> KAVERI K. R.</br></h2>
+  <p> I like to program  ideas simplifying life into code with beautiful  user interfaces.</p>
+    </div>
+</div>
+
+
+<div class="skills" id="skills">
+
+    <div id="content">
+        <h1>Timeline</h1>
+
+        <ul class="timeline">
+            <li class="event" data-date="2019">
+                <h3>Freelance Developer</h3>
+                <p> </p>
+            </li>
+            <li class="event" data-date="2018">
+                <h3>Android Developer</h3>
+                <p>Algosoft Apps Technologies Pvt. Ltd.</p>
+            </li>
+            <li class="event" data-date="2016-2018">
+                <h3>Software Developer</h3>
+                <p></p> <p>SRC Technosoft Pvt. Ltd.</p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="charts">
+        <div class="tabs" id="tabs">
+        <button id="Languages btn" class="btn active" onclick="openCity('Languages')">Languages</button>
+        <button  id="Technologies btn" class="btn" onclick="openCity('Technologies')">Technologies</button>
+
+        </div>
+
+    <div id="Languages" class="skill">
+    <iframe class="graph1"  src="https://live.amcharts.com/mM2MT/embed/" frameborder="0"></iframe>
+    </div>
+    <div   id="Technologies" class="skill" style="display:none">
+        <iframe  class="graph1"  src="https://live.amcharts.com/OTEzM/embed/" frameborder="0"></iframe>
+    </div>
+    </div>
+</div>
+<div class="projects">
+    <h2>Projects Showcase</h2>
+ <div class="project">
+
+<div class="image">
+ <img src="project_one.png" alt=" "></div>
+     <div class="info">
+     <h2>CallerId App</h2>
+     <p> The project has system application features.</p>
+     </div>
+ </div>
+    <div class="project">
+        <div class="image">
+            <img src="project_two.png" alt=" "></div>
+     <div class="info">
+     <h2>Mediure App </h2>
+     <p>It is a offline database management and notification  system. </p>
+     </div>
+ </div><div class="project">
+    <div class="image">
+        <img src="project_three.png" alt=" "></div>
+     <div class="info">
+     <h2>EazyLearning For Kids App</h2>
+     <p> The project has custom views and multimedia for enhancing learning experience.</p>
+     </div>
+ </div>
+
+</div>
+
+<div class="footer">
+    <div class="up" >
+
+        <a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+    </div>
+
+    <p> Made By the developer(time to add more skills to the graph).</p>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function openCity(cityName) {
+  var i,j;
+  var x = document.getElementsByClassName("skill");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+document.getElementById(cityName).style.display = "block";
+
+
+var btns = document.getElementsByClassName("btn");
+
+for (var i = 0; i < btns.length; i++) {
+
+    btns[i].className = btns[i].className.replace(" active", "");
+  }
+
+document.getElementById(cityName +" btn").className += " active";
+
+}
+</script>
+</body>
+</html>
+
