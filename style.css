@@ -58,9 +58,8 @@ body{
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: flex;
+   flex: right;
   }
   .topnav.responsive a {
     float: none;
@@ -314,7 +313,7 @@ h1 {
   list-style: none;
   text-align: left;
   font-weight: 100;
-  max-width: 40%;
+  max-width: 35%;
 }
 .timeline h1 {
 
